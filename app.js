@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", 'ejs');
 app.use(static("public/"));
 
-mongoose.connect("mongodb://localhost:27017/secrets", { useUnifiedTopology: true, useNewUrlParser: true });
+mongoose.connect("mongodb+srv://shiv8115:Shivam@111@cluster0.ohxvc.mongodb.net/secrets?retryWrites=true&w=majority", { useUnifiedTopology: true, useNewUrlParser: true });
 
 const userSchema = new mongoose.Schema({
     username: String,
